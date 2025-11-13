@@ -1559,6 +1559,7 @@
                 }
 
                 const data = {
+                    id: parseInt(currentEditId),
                     title: title,
                     genre: editGenreEl.value.trim() || null,
                     rating: editRatingEl.value ? parseInt(editRatingEl.value) : null,
@@ -1573,7 +1574,8 @@
                     });
 
                     if (!res.ok) {
-                        toast('Update failed', 'error');
+                        const error = await res.text();
+                        toast('Update failed: ' + error, 'error');
                         return;
                     }
                     toast('Movie updated successfully!', 'success');
