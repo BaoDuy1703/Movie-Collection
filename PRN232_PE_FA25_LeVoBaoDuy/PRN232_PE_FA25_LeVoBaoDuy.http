@@ -1,0 +1,6 @@
+@PRN232_PE_FA25_LeVoBaoDuy_HostAddress = http://localhost:5127
+
+GET {{PRN232_PE_FA25_LeVoBaoDuy_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

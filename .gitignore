@@ -1,0 +1,10 @@
+bin/
+obj/
+out/
+.vs/
+**/*.user
+**/*.swp
+**/*.db
+**/*.sqlite
+Properties/launchSettings.json
+appsettings.*.local.json
